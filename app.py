@@ -12,7 +12,7 @@ import streamlit as st
 
 # loading the saved model
 #loaded_model = pickle.load(open('C:/Users/sujee/Downloads/mineproject/trained_model.sav', 'rb'))
-loaded_model = pickle.load(open('/path/to/your/trained_model.sav', 'rb'))
+loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 
 
@@ -47,7 +47,7 @@ def validate_input(value):
 
 # Load the dataset from the Excel file
 #file_path = "C:/Users/sujee/Downloads/mineproject/Book1.xlsx"
-file_path = '/path/to/your/Book1.xlsx'
+file_path = 'Book1.xlsx'
 df = pd.read_excel(file_path)
 
 # Extract features (X) and target variable (y)
